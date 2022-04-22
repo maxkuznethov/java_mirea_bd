@@ -1,236 +1,60 @@
-1080 [background-preinit] INFO  o.h.validator.internal.util.Version –
+1073 [background-preinit] INFO  o.h.validator.internal.util.Version –
                 HV000001: Hibernate Validator 6.2.3.Final
+1081 [main] INFO  ru.mirea.task14.Task14Application –
+                Starting Task14Application using Java 17.0.2 on LAPTOP-FS6ABO0T with PID 24636 (D:\java\task14\target\classes started by maxku in D:\java\task14)
 1083 [main] INFO  ru.mirea.task14.Task14Application –
-                Starting Task14Application using Java 17.0.2 on LAPTOP-FS6ABO0T with PID 10608 (D:\java\task14\target\classes started by maxku in D:\java\task14)
-1089 [main] INFO  ru.mirea.task14.Task14Application –
                 No active profile set, falling back to 1 default profile: "default"
-2956 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
+2105 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
                 Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-3053 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
-                Finished Spring Data repository scanning in 79 ms. Found 2 JPA repository interfaces.
-4058 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer –
+2169 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
+                Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2773 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer –
                 Tomcat initialized with port(s): 8080 (http)
-4073 [main] INFO  o.a.coyote.http11.Http11NioProtocol –
+2782 [main] INFO  o.a.coyote.http11.Http11NioProtocol –
                 Initializing ProtocolHandler ["http-nio-8080"]
-4074 [main] INFO  o.a.catalina.core.StandardService –
+2782 [main] INFO  o.a.catalina.core.StandardService –
                 Starting service [Tomcat]
-4074 [main] INFO  o.a.catalina.core.StandardEngine –
+2782 [main] INFO  o.a.catalina.core.StandardEngine –
                 Starting Servlet engine: [Apache Tomcat/9.0.60]
-4290 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –
+2927 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –
                 Initializing Spring embedded WebApplicationContext
-4290 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext –
-                Root WebApplicationContext: initialization completed in 3112 ms
-4649 [main] INFO  com.zaxxer.hikari.HikariDataSource –
+2928 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext –
+                Root WebApplicationContext: initialization completed in 1791 ms
+3183 [main] INFO  com.zaxxer.hikari.HikariDataSource –
                 HikariPool-1 - Starting...
-4921 [main] INFO  com.zaxxer.hikari.HikariDataSource –
+3416 [main] INFO  com.zaxxer.hikari.HikariDataSource –
                 HikariPool-1 - Start completed.
-4981 [main] INFO  o.h.jpa.internal.util.LogHelper –
+3459 [main] INFO  o.h.jpa.internal.util.LogHelper –
                 HHH000204: Processing PersistenceUnitInfo [name: default]
-5073 [main] INFO  org.hibernate.Version –
+3510 [main] INFO  org.hibernate.Version –
                 HHH000412: Hibernate ORM core version 5.6.7.Final
-5374 [main] INFO  o.h.annotations.common.Version –
+3697 [main] INFO  o.h.annotations.common.Version –
                 HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-5550 [main] INFO  org.hibernate.dialect.Dialect –
+3824 [main] INFO  org.hibernate.dialect.Dialect –
                 HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-6460 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator –
+4453 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator –
                 HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-6475 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
+4463 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
                 Initialized JPA EntityManagerFactory for persistence unit 'default'
-7139 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration –
+4910 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration –
                 spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-7949 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver –
+5466 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver –
                 Exposing 1 endpoint(s) beneath base path '/actuator'
-7996 [main] INFO  o.a.coyote.http11.Http11NioProtocol –
+5520 [main] INFO  o.a.coyote.http11.Http11NioProtocol –
                 Starting ProtocolHandler ["http-nio-8080"]
-8024 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer –
+5545 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer –
                 Tomcat started on port(s): 8080 (http) with context path ''
-8048 [main] INFO  ru.mirea.task14.Task14Application –
-                Started Task14Application in 7.526 seconds (JVM running for 8.928)
-8478 [RMI TCP Connection(3)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –
+5564 [main] INFO  ru.mirea.task14.Task14Application –
+                Started Task14Application in 5.035 seconds (JVM running for 6.532)
+6210 [RMI TCP Connection(1)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –
                 Initializing Spring DispatcherServlet 'dispatcherServlet'
-8478 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet –
+6210 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet –
                 Initializing Servlet 'dispatcherServlet'
-8482 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet –
+6213 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet –
                 Completed initialization in 3 ms
-25135 [http-nio-8080-exec-1] INFO  r.m.task14.services.DoctorService –
-                Find all doctors
-100402 [http-nio-8080-exec-2] INFO  r.m.task14.services.DoctorService –
-                Save doctor vadim ohremenko, kab8
-669769 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
+613764 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
                 Closing JPA EntityManagerFactory for persistence unit 'default'
-669774 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource –
+613764 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource –
                 HikariPool-1 - Shutdown initiated...
-669781 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Shutdown completed.
-1142 [background-preinit] INFO  o.h.validator.internal.util.Version –
-                HV000001: Hibernate Validator 6.2.3.Final
-1148 [main] INFO  ru.mirea.task14.Task14Application –
-                Starting Task14Application using Java 17.0.2 on LAPTOP-FS6ABO0T with PID 12524 (D:\java\task14\target\classes started by maxku in D:\java\task14)
-1149 [main] INFO  ru.mirea.task14.Task14Application –
-                No active profile set, falling back to 1 default profile: "default"
-2553 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
-                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2649 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
-                Finished Spring Data repository scanning in 81 ms. Found 2 JPA repository interfaces.
-3567 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer –
-                Tomcat initialized with port(s): 8080 (http)
-3580 [main] INFO  o.a.coyote.http11.Http11NioProtocol –
-                Initializing ProtocolHandler ["http-nio-8080"]
-3581 [main] INFO  o.a.catalina.core.StandardService –
-                Starting service [Tomcat]
-3581 [main] INFO  o.a.catalina.core.StandardEngine –
-                Starting Servlet engine: [Apache Tomcat/9.0.60]
-3758 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –
-                Initializing Spring embedded WebApplicationContext
-3759 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext –
-                Root WebApplicationContext: initialization completed in 2534 ms
-4130 [main] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Starting...
-4401 [main] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Start completed.
-4475 [main] INFO  o.h.jpa.internal.util.LogHelper –
-                HHH000204: Processing PersistenceUnitInfo [name: default]
-4566 [main] INFO  org.hibernate.Version –
-                HHH000412: Hibernate ORM core version 5.6.7.Final
-4868 [main] INFO  o.h.annotations.common.Version –
-                HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-5048 [main] INFO  org.hibernate.dialect.Dialect –
-                HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-6001 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator –
-                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-6013 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
-                Initialized JPA EntityManagerFactory for persistence unit 'default'
-6666 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext –
-                Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'hospitalController' defined in file [D:\java\task14\target\classes\ru\mirea\task14\controller\HospitalController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'doctorService' defined in file [D:\java\task14\target\classes\ru\mirea\task14\services\DoctorService.class]: Initialization of bean failed; nested exception is java.lang.NoSuchMethodError: 'boolean org.springframework.util.ClassUtils.isLambdaClass(java.lang.Class)'
-6667 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
-                Closing JPA EntityManagerFactory for persistence unit 'default'
-6672 [main] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Shutdown initiated...
-6680 [main] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Shutdown completed.
-6685 [main] INFO  o.a.catalina.core.StandardService –
-                Stopping service [Tomcat]
-6717 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener –
-                
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-6742 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter –
-                
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-An attempt was made to call a method that does not exist. The attempt was made from the following location:
-
-    org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy(AbstractAutoProxyCreator.java:448)
-
-The following method did not exist:
-
-    'boolean org.springframework.util.ClassUtils.isLambdaClass(java.lang.Class)'
-
-The calling method's class, org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator, was loaded from the following location:
-
-    jar:file:/C:/Users/maxku/.m2/repository/org/springframework/spring-aop/5.3.19/spring-aop-5.3.19.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.class
-
-The called method's class, org.springframework.util.ClassUtils, is available from the following locations:
-
-    jar:file:/C:/Users/maxku/.m2/repository/org/springframework/spring-core/5.3.18/spring-core-5.3.18.jar!/org/springframework/util/ClassUtils.class
-
-The called method's class hierarchy was loaded from the following locations:
-
-    org.springframework.util.ClassUtils: file:/C:/Users/maxku/.m2/repository/org/springframework/spring-core/5.3.18/spring-core-5.3.18.jar
-
-
-Action:
-
-Correct the classpath of your application so that it contains compatible versions of the classes org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator and org.springframework.util.ClassUtils
-
-1008 [background-preinit] INFO  o.h.validator.internal.util.Version –
-                HV000001: Hibernate Validator 6.2.3.Final
-1007 [main] INFO  ru.mirea.task14.Task14Application –
-                Starting Task14Application using Java 17.0.2 on LAPTOP-FS6ABO0T with PID 7292 (D:\java\task14\target\classes started by maxku in D:\java\task14)
-1011 [main] INFO  ru.mirea.task14.Task14Application –
-                No active profile set, falling back to 1 default profile: "default"
-2462 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
-                Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2548 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate –
-                Finished Spring Data repository scanning in 68 ms. Found 2 JPA repository interfaces.
-3549 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer –
-                Tomcat initialized with port(s): 8080 (http)
-3561 [main] INFO  o.a.coyote.http11.Http11NioProtocol –
-                Initializing ProtocolHandler ["http-nio-8080"]
-3562 [main] INFO  o.a.catalina.core.StandardService –
-                Starting service [Tomcat]
-3562 [main] INFO  o.a.catalina.core.StandardEngine –
-                Starting Servlet engine: [Apache Tomcat/9.0.60]
-3749 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –
-                Initializing Spring embedded WebApplicationContext
-3750 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext –
-                Root WebApplicationContext: initialization completed in 2671 ms
-4100 [main] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Starting...
-4425 [main] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Start completed.
-4488 [main] INFO  o.h.jpa.internal.util.LogHelper –
-                HHH000204: Processing PersistenceUnitInfo [name: default]
-4569 [main] INFO  org.hibernate.Version –
-                HHH000412: Hibernate ORM core version 5.6.7.Final
-4817 [main] INFO  o.h.annotations.common.Version –
-                HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-4968 [main] INFO  org.hibernate.dialect.Dialect –
-                HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
-5846 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator –
-                HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-5859 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
-                Initialized JPA EntityManagerFactory for persistence unit 'default'
-6589 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration –
-                spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-7451 [main] INFO  o.s.b.a.e.web.EndpointLinksResolver –
-                Exposing 1 endpoint(s) beneath base path '/actuator'
-7505 [main] INFO  o.a.coyote.http11.Http11NioProtocol –
-                Starting ProtocolHandler ["http-nio-8080"]
-7551 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer –
-                Tomcat started on port(s): 8080 (http) with context path ''
-7579 [main] INFO  ru.mirea.task14.Task14Application –
-                Started Task14Application in 7.067 seconds (JVM running for 8.423)
-7864 [RMI TCP Connection(1)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] –
-                Initializing Spring DispatcherServlet 'dispatcherServlet'
-7865 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet –
-                Initializing Servlet 'dispatcherServlet'
-7868 [RMI TCP Connection(1)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet –
-                Completed initialization in 3 ms
-18116 [http-nio-8080-exec-1] INFO  r.m.task14.services.DoctorService –
-                Find all doctors
-18433 [http-nio-8080-exec-1] INFO  ru.mirea.task14.components.Aspect –
-                Execution time: 341
-70433 [http-nio-8080-exec-3] INFO  r.m.task14.services.DoctorService –
-                Find all doctors
-70438 [http-nio-8080-exec-3] INFO  ru.mirea.task14.components.Aspect –
-                Execution time: 6
-78434 [http-nio-8080-exec-4] INFO  r.m.task14.services.DoctorService –
-                Find all doctors
-78439 [http-nio-8080-exec-4] INFO  ru.mirea.task14.components.Aspect –
-                Execution time: 5
-93713 [http-nio-8080-exec-5] INFO  r.m.task14.services.DoctorService –
-                Find all doctors
-93719 [http-nio-8080-exec-5] INFO  ru.mirea.task14.components.Aspect –
-                Execution time: 6
-110336 [http-nio-8080-exec-6] INFO  r.m.task14.services.DoctorService –
-                Save doctor vadim ohremenko, kab9
-110405 [http-nio-8080-exec-6] INFO  ru.mirea.task14.components.Aspect –
-                Execution time: 69
-157196 [http-nio-8080-exec-7] INFO  r.m.task14.services.DoctorService –
-                Delete doctor vadim ohremenko, kab9
-157327 [http-nio-8080-exec-7] INFO  ru.mirea.task14.components.Aspect –
-                Execution time: 176
-13170370 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool –
-                HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h25s244ms223µs100ns).
-33026969 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean –
-                Closing JPA EntityManagerFactory for persistence unit 'default'
-33027013 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource –
-                HikariPool-1 - Shutdown initiated...
-33027035 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource –
+613764 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource –
                 HikariPool-1 - Shutdown completed.

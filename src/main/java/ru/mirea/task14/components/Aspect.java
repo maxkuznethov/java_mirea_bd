@@ -1,30 +1,32 @@
 package ru.mirea.task14.components;
 
 import lombok.extern.slf4j.Slf4j;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StopWatch;
 
 @Slf4j
 @Component
 @org.aspectj.lang.annotation.Aspect
 public class Aspect {
-   private long startTime;
 
-   @Before("allServiceMethods()")
-   public void setStartTime(){
-      startTime=System.currentTimeMillis();
-   }
+    @Pointcut("within(ru.mirea.task14.services.*)")
+    public void allServiceMethods() {
+    }
 
-   @After("allServiceMethods()")
-   public void printTime(){
-      long endTime = System.currentTimeMillis();
-      log.info("Execution time: "+ (endTime -startTime) + "ms");
-   }
+    @Around("allServiceMethods()")
+    public Object getExecutionTime(ProceedingJoinPoint joinPoint) throws Throwable {
+        StopWatch stopWatch = new StopWatch();
+        stopWatch.start();
+        try {
+            return joinPoint.proceed();
+        } finally {
+            stopWatch.stop();
+            log.info("Execution time: " + stopWatch.getTotalTimeMillis() + "ms");
+        }
 
-   @Pointcut("within(ru.mirea.task14.services.*)")
-   public void allServiceMethods(){};
-
+    }
 
 }

@@ -4,6 +4,7 @@ package ru.mirea.task14.services;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import ru.mirea.task14.components.Doctor;
 import ru.mirea.task14.components.Patient;
 import ru.mirea.task14.repos.DoctorRep;
@@ -12,9 +13,14 @@ import java.util.List;
 
 @Service
 @Slf4j
+@Transactional
 public class DoctorService {
+    private final DoctorRep doctorRep;
+
     @Autowired
-    private DoctorRep doctorRep;
+    public DoctorService(DoctorRep doctorRep) {
+        this.doctorRep = doctorRep;
+    }
 
 
     public boolean addDoctor(Doctor doctor) {
