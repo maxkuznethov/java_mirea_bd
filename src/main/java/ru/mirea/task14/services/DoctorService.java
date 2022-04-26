@@ -16,16 +16,20 @@ import java.util.List;
 @Transactional
 public class DoctorService {
     private final DoctorRep doctorRep;
+    private final EmailService emailService;
 
     @Autowired
-    public DoctorService(DoctorRep doctorRep) {
+    public DoctorService(DoctorRep doctorRep, EmailService emailService) {
         this.doctorRep = doctorRep;
+        this.emailService=emailService;
+
     }
 
 
     public boolean addDoctor(Doctor doctor) {
         log.info("Save doctor {}", doctor);
         doctorRep.save(doctor);
+        emailService.sendSimpleMessage("Doctors", String.format("Doctor added: %s", doctor));
         return true;
     }
 
@@ -41,6 +45,8 @@ public class DoctorService {
         for (Doctor doctor : doctorList) {
             System.out.println(doctor);
         }
+
+
 
     }
 

@@ -15,16 +15,19 @@ import java.util.List;
 @Transactional
 public class PatientService {
     private final PatientRep patientRep;
+    private final EmailService emailService;
 
     @Autowired
-    public PatientService(PatientRep patientRep) {
+    public PatientService(PatientRep patientRep, EmailService emailService) {
         this.patientRep = patientRep;
+        this.emailService = emailService;
     }
 
 
     public boolean addPatient(Patient patient) {
         log.info("Save patient {}", patient);
         patientRep.save(patient);
+        emailService.sendSimpleMessage("Patients", String.format("Patient added: %s", patient));
         return true;
     }
 
