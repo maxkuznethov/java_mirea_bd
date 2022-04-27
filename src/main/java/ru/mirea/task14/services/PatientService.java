@@ -24,6 +24,11 @@ public class PatientService {
     }
 
 
+    public List<Patient> getPatients(){
+        log.info("Get all patients");
+        return patientRep.findAll();
+    }
+
     public boolean addPatient(Patient patient) {
         log.info("Save patient {}", patient);
         patientRep.save(patient);
@@ -37,9 +42,9 @@ public class PatientService {
         return true;
     }
 
-    public void getAllPatients() {
-        log.info("Find all patients");
-        List<Patient> patientList = patientRep.findAll();
+    public void printAllPatients() {
+        log.info("Print all patients");
+        List<Patient> patientList = getPatients();
         for (Patient patient : patientList) {
             System.out.println(patient);
         }

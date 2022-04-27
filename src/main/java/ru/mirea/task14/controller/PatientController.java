@@ -41,7 +41,7 @@ public class PatientController {
 
     @GetMapping("/getall")
     public String getAllPatients() {
-        patientService.getAllPatients();
+        patientService.printAllPatients();
         return "home";
     }
 }

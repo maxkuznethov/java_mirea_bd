@@ -18,11 +18,10 @@ public class DoctorService {
     private final DoctorRep doctorRep;
     private final EmailService emailService;
 
-    @Autowired
+
     public DoctorService(DoctorRep doctorRep, EmailService emailService) {
         this.doctorRep = doctorRep;
-        this.emailService=emailService;
-
+        this.emailService = emailService;
     }
 
 
@@ -39,15 +38,17 @@ public class DoctorService {
         return true;
     }
 
-    public void getAllDoctors() {
-        log.info("Find all doctors");
-        List<Doctor> doctorList = doctorRep.findAll();
+    public void printAllDoctors() {
+        log.info("Print all doctors");
+        List<Doctor> doctorList = getDoctors();
         for (Doctor doctor : doctorList) {
             System.out.println(doctor);
         }
+    }
 
-
-
+    public List<Doctor> getDoctors() {
+        log.info("Get all doctors");
+        return doctorRep.findAll();
     }
 
     public Doctor getDoctorById(int id) {
